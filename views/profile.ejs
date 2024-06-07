@@ -1,0 +1,16 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+  
+  <div class="profile">
+    <h2>Your Profie</h2>
+    <h3>Welcome <%=user.name%></h3>
+    <p>email : <%=user.email%></p>
+    <a href="/user/logout">logout</a>    
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

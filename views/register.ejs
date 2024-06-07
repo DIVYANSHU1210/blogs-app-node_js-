@@ -1,0 +1,25 @@
+<html lang="en">
+    <%-include ("./partials/head.ejs") %>
+<body>
+    <%- include ("./partials/nav.ejs")%>
+    <h1>New to BLOGS? Register</h1>
+    <div class="registration">
+        <form action="/user/signup" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required/>
+            <label for="email">Your Email id</label>
+            <input type="email" id="email" name="email" required/>
+            <label for="password">Create password</label>
+            <input type="password" id="password" name="password" required/>
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required/>
+            <button>Submit</button>
+        </form>
+
+        <a href="/user/login">already have an account, login</a>
+    </div>
+    
+
+    <%-include ("./partials/footer.ejs") %>
+</body>    
+</html>
