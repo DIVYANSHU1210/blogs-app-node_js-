@@ -76,25 +76,25 @@
     /* details styles */
 
     /* create styles */
-    .create-blog form ,  .registration  form{
+    .create-blog form ,  .registration  form, .login form{
       max-width: 400px;
       margin: 0 auto;
     }
     .create-blog input,
-    .create-blog textarea , .registration input{
+    .create-blog textarea , .registration input , .login input {
       display: block;
       width: 100%;
       margin: 10px 0;
       padding: 8px;
     }
-    .create-blog label , .registration label{
+    .create-blog label , .registration label, .login label{
       display: block;
       margin-top: 24px;
     }
     textarea{
       height: 120px;
     }
-    .create-blog button ,  .registration button{
+    .create-blog button ,  .registration button, .login button{
       margin-top: 20px;
       background: crimson;
       color: white;
@@ -104,3 +104,7 @@
       cursor: pointer;
     }
 
+
+    .registration a, .login a{
+      color: blue;
+    }

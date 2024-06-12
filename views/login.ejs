@@ -1,8 +1,9 @@
 <html lang="en">
     <%-include ("./partials/head.ejs")%>
     <body>
+        <%-include ('./partials/nav.ejs')%>
         <div class="login">
-            <h1>already have an account, Login</h1>
+            <h1>already have an account!! Login</h1>
             <form action="/user/login" method="POST">
                 <label for="email">Your Email id</label>
                 <input type="email" id="email" name="email" required/>
@@ -10,7 +11,7 @@
                 <input type="password" id="password" name="password" required/>
                 <button>Submit</button>
              </form>
-            <a href="/register">New to BLOGS? Register</a>
+            <a href="/user/signup">New to BLOGS? Register</a>
         
         </div>
         

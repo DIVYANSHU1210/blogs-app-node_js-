@@ -39,13 +39,6 @@ app.use(session({
   store:store
 }))
 
-// const isAuth = (req, res, next)=>{
-//   if(req.session.isAuth){
-//     next();
-//   }
-//   res.redirect("/user/signup")
-// }
-
 app.get("/", (req, res) => {
   if(!req.session.isAuth){
     res.redirect("/user/signup")
@@ -60,9 +53,6 @@ app.get("/about", (req, res) => {
   }
   res.render("about", { title: "About" });
 });
-
-
-
 
 // blog routes
 app.use("/blogs", blogRoutes);
